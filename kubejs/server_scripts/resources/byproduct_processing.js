@@ -59,7 +59,7 @@ ServerEvents.recipes(event => {
         .EUt(75)
 
     event.recipes.gtceu.chemical_reactor('ghast_tear_creation')
-        .itemInputs('gtceu:tiny_potassium_dust', 'tiny_lithium_dust')
+        .itemInputs('gtceu:tiny_potassium_dust', 'gtceu:tiny_lithium_dust')
         .inputFluids('gtceu:salt_water 1000')
         .itemOutputs('minecraft:ghast_tear')
         .outputFluids('minecraft:water 1000')

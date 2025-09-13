@@ -29,7 +29,7 @@ ServerEvents.recipes(event => {
         .itemInputs('9x gtceu:diorite_dust')
         .inputFluids('minecraft:water 1296')
         .outputFluids('gtceu:diorite_mixture 1296')
-        .chancedOutput('gtceu:vanadium_dust', 2000, 0)
+        .chancedOutput('gtceu:antimony_dust', 2000, 0)
         .EUt(64)
         .duration(360)
 

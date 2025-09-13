@@ -72,5 +72,9 @@
   "material.gtceu.hazium_supertemporaryconductor": "Hazium Super-Temporary-Conductor",
 
   "material.gtceu.silmaril": "Silmaril",
-  "material.gtceu.soul_lava": "Soul Lava"
+  "material.gtceu.soul_lava": "Soul Lava",
+  "material.gtceu.molten_flux": "Molten Flux",
+
+  "material.gtceu.fluix_pearl": "Fluix Pearl",
+  "material.gtceu.liquid_nitrogen": "Liquid Nitrogen"
 }

@@ -78,6 +78,7 @@
             F: 'kubejs:terralite_grinding_head'
         })
 
+    //Tom's
         event.shaped('toms_storage:ts.storage_terminal', [
             'ABA',
             'BCD',
@@ -100,6 +101,28 @@
             C: 'gtceu:steel_crate',
             D: 'minecraft:diamond',
             E: 'gtceu:dense_low_grade_terralite_superconductor_quadruple_wire'
+        })
+
+        event.shaped('toms_storage:ts.inventory_cable_connector', [
+            ' CB',
+            'AED',
+            ' CB'
+        ], {
+            A: 'toms_storage:ts.inventory_cable',
+            B: '#minecraft:planks',
+            C: 'gtceu:quartzite_gem',
+            D: 'gtceu:tin_huge_item_pipe',
+            E: '#forge:chests/wooden'
+        })
+
+                event.shaped('toms_storage:ts.inventory_cable_connector_filtered', [
+            ' C ',
+            'BAB',
+            ' C '
+        ], {
+            A: 'toms_storage:ts.inventory_cable_connector',
+            B: 'gtceu:quartzite_gem',
+            C: 'minecraft:paper',
         })
 
     //LaserIO
@@ -193,25 +216,56 @@
             C: 'laserio:logic_chip',
             D: 'gtceu:obsidian_plate',
             E: 'minecraft:bucket'
-        })
+        });
 
+    //Vanilla
     event.shaped('minecraft:shears', [
         ' A ',
         'AB '
     ], {
         A: 'gtceu:iron_plate',
         B: '#forge:tools/hammers'
-    })
+    });
 
     event.shaped('minecraft:elytra', [
         'BCB',
         'ADA',
-        'A A',
+        'A A'
     ], {
         A: 'gtceu:polytetrafluoroethylene_plate',
         B: 'gtceu:stainless_steel_gear',
         C: 'gtceu:long_stainless_steel_rod',
         D: '#forge:tools/wrenches'
-    })
-
     });
+
+    // Ender Chests & Tanks
+    event.shaped('endertanks:ender_bucket', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],{
+        A: 'minecraft:blaze_powder',
+        B: 'gtceu:obsidian_plate',
+        C: 'minecraft:bucket'
+    });
+
+    event.shaped('endertanks:ender_tank', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],{
+        A: 'minecraft:blaze_rod',
+        B: 'gtceu:obsidian_plate',
+        C: 'endertanks:ender_bucket'
+    });
+
+    event.shaped('enderchests:ender_chest', [
+        'ABA',
+        'BCB',
+        'ABA'
+    ],{
+        A: 'minecraft:blaze_rod',
+        B: 'gtceu:obsidian_plate',
+        C: '#forge:chests/wooden'
+    });
+});

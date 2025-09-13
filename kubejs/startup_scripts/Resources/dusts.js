@@ -48,4 +48,9 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('enriched_mineral_mixture')
         .dust()
         .color(0xbdb5bc)
+
+    //ae2
+    event.create('fluix_pearl')
+        .dust()
+        .color(0x866696)
 });
