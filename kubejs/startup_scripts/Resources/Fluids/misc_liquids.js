@@ -25,4 +25,8 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
     event.create('saline_groundwater')
         .liquid(293)
         .color(0x4e60cc)
+
+    event.create('crystalization_catalyst_solution')
+        .liquid(293)
+        .color(0xcccc81)
 });

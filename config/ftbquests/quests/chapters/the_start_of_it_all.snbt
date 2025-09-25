@@ -771,7 +771,10 @@
 			y: 15.0d
 		}
 		{
-			dependencies: ["5BF9E50B012DFD2F"]
+			dependencies: [
+				"5BF9E50B012DFD2F"
+				"42BC4F6F0B598D17"
+			]
 			description: [
 				"These machines process various stone dusts to separate them into simpler components, occasionally giving off precious byproducts."
 				""
@@ -1155,9 +1158,9 @@
 		{
 			dependencies: ["5B6B4A4ACF1923E3"]
 			description: [
-				"For smashing things in the crafting table."
+				"For smashing things in the crafting table, and muffling machines by right clicking them. "
 				""
-				"It also works as a pickaxe, but not as well."
+				"It also works as a pickaxe, but not very well."
 			]
 			icon: {
 				Count: 1
@@ -1433,6 +1436,20 @@
 			x: -8.5d
 			y: 13.5d
 		}
+		{
+			dependencies: ["700184B42DDD888A"]
+			description: ["The tools for making this shouldnt be too difficult. The dye for the crowbar can come from bone meal, which you can get in a vanilla composter."]
+			hide_dependency_lines: true
+			id: "42BC4F6F0B598D17"
+			shape: "rsquare"
+			tasks: [{
+				id: "5539198AEFE9EED0"
+				item: "gtceu:maintenance_hatch"
+				type: "item"
+			}]
+			x: -4.5d
+			y: 16.5d
+		}
 	]
-	title: "The Start Of It All (ULV-LV)"
+	title: "Stone Age (ULV-LV)"
 }

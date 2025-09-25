@@ -51,7 +51,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('primitive_sifter')
 		.category('simple')
 		.setEUIO('in')
-		.setMaxIOSize(2, 4, 0, 0)
+		.setMaxIOSize(2, 6, 0, 0)
 		.setSlotOverlay(false, false, GuiTextures.EXTRACTOR_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.MACERATOR);
@@ -59,7 +59,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('primitive_centrifuge')
 		.category('simple')
 		.setEUIO('in')
-		.setMaxIOSize(1, 4, 1, 1)
+		.setMaxIOSize(1, 3, 1, 3)
 		.setSlotOverlay(false, false, GuiTextures.CENTRIFUGE_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.CENTRIFUGE);
@@ -70,7 +70,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('thermal_generator')
 		.category('simple')
 		.setEUIO('out')
-		.setMaxIOSize(1, 0, 1, 1)
+		.setMaxIOSize(1, 0, 1, 0)
 		.setSlotOverlay(false, false, GuiTextures.COMPRESSOR_OVERLAY)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.CENTRIFUGE);

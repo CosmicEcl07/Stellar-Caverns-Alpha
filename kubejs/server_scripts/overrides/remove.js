@@ -1,13 +1,16 @@
 ServerEvents.recipes(event => {
     event.remove({id: 'gtceu:centrifuge/decomposition_centrifuging__redstone'})
-    event.remove({id: 'gtceu:smelting/smelt_dust_dense_low_grade_terralite_superconductor_to_ingot'})
-    event.remove({id: 'gtceu:alloy_smelter/alloy_smelt_dense_low_grade_terralite_superconductor_dust_to_block'})
+    event.remove({id: 'gtceu:smelting/smelt_dust_low_grade_terralite_superconductor_to_ingot'})
+    event.remove({id: 'gtceu:alloy_smelter/alloy_smelt_low_grade_terralite_superconductor_dust_to_block'})
     event.remove({id: 'gtceu:autoclave/silicon_dioxide_to_quartzite_gem'})
     event.remove({id: 'gtceu:assembler/end_crystal'})
     event.remove({id: 'gtceu:electric_blast_furnace/titanium_from_tetrachloride'})
     event.remove({id: 'gtceu:large_chemical_reactor/titanium_tetrachloride'})
     event.remove({id: 'gtceu:chemical_reactor/titanium_tetrachloride'})
     event.remove({id: 'gtceu:coke_oven/log_to_charcoal'})
+    event.remove({id: 'gtceu:arc_furnace/arc_netherite_dust'})
+    event.remove({id: 'gtceu:alloy_smelter/alloy_smelt_netherite_dust_to_block'})
+    event.remove({id: 'gtceu:smelting/smelt_dust_netherite_t0_ingot'})
 
     event.remove({id: 'gtceu:shaped/mv_lathe'})
     event.remove({id: 'gtceu:shaped/mv_macerator'})
@@ -163,6 +166,9 @@ ServerEvents.recipes(event => {
     event.remove({id: 'minecraft:ender_eye'})
     event.remove({id: 'minecraft:observer'})
     event.remove({id: 'minecraft:end_crystal'})
+    event.remove({id: 'minecraft:netherite_ingot'})
+    event.remove({id: 'minecraft:netherite_scrap'})
+    event.remove({id: 'minecraft:netherite_scrap_from_blasting'})
 
     event.remove({id: 'laserio:logic_chip_raw'})
     event.remove({id: 'laserio:laser_connector_advanced'})

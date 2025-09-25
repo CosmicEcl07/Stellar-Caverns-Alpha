@@ -21,7 +21,7 @@
   "material.gtceu.enriched_mineral_water": "Enriched Mineral Water",
   "material.gtceu.enriched_mineral_mixture": "Enriched Mineral Mixture",
   "material.gtceu.saline_groundwater": "Saline Groundwater",
-  "gtceu.bedrock_fluid.saline_groundwater_vein": "Saline Groundwater Vein",
+  "gtceu.jei.bedrock_fluid.saline_groundwater_vein": "Saline Groundwater Vein",
 
   "material.gtceu.low_grade_terralite": "Low Grade Terralite",
   
@@ -102,9 +102,9 @@
   "gtceu.crystalarium": "Crystalarium",
   "block.gtceu.crystalarium": "Crystalarium",
 
-  "material.gtceu.dense_low_grade_terralite_superconductor": "Dense Low Grade Terralite Superconductor",
-  "material.gtceu.magnesiated_terralite_superconductor":"Magnesiated Terralite Superconductor",
-  "material.gtceu.hazium_supertemporaryconductor": "Hazium Super-Temporary-Conductor",
+  "material.gtceu.low_grade_terralite_superconductor": "Low Grade Terralite Superconductor",
+  "material.gtceu.magnesiated_terralite_superconductor":"Medium Grade Terralite Superconductor",
+  "material.gtceu.hazium_supertemporaryconductor": "High Grade Terralite Superconductor",
 
   "material.gtceu.silmaril": "Silmaril",
   "material.gtceu.soul_lava": "Soul Lava",
@@ -114,5 +114,7 @@
   "material.gtceu.impure_titanium_tetrachloride": "Impure Titanium Tetrachloride",
   "material.gtceu.fluix_pearl": "Fluix Pearl",
   "material.gtceu.liquid_nitrogen": "Liquid Nitrogen",
-  "material.gtceu.futura_alloy": "Futura Steel"
+  "material.gtceu.futura_alloy": "Futura Steel",
+  "material.gtceu.crystalization_catalyst_solution": "Crystalization Catalyst Solution",
+  "material.gtceu.monoammonium_phosphate": "Monoammonium Phosphate"
 }

@@ -100,7 +100,7 @@
             B: 'minecraft:redstone_block',
             C: 'gtceu:steel_crate',
             D: 'minecraft:diamond',
-            E: 'gtceu:dense_low_grade_terralite_superconductor_quadruple_wire'
+            E: 'gtceu:low_grade_terralite_superconductor_quadruple_wire'
         })
 
         event.shaped('toms_storage:ts.inventory_cable_connector', [
@@ -433,5 +433,21 @@
         B: '#gtceu:circuits/mv',
         C: 'gtceu:heatproof_machine_casing',
         D: 'gtceu:copper_single_cable'
+    });
+
+    //quality of life logs
+    event.shaped('16x minecraft:stick', [
+        'A  ',
+        'A  '
+    ], {
+        A: '#minecraft:logs'
+    });
+
+    event.shaped('4x minecraft:chest', [
+        'AAA',
+        'A A',
+        'AAA'
+    ], {
+        A: '#minecraft:logs'
     });
 });

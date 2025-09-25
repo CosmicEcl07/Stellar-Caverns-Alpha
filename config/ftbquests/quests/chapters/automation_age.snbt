@@ -1,0 +1,35 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "automation_age"
+	group: "75DFBC3AD5337DEA"
+	icon: "gtceu:iv_sensor"
+	id: "0337E0C969AF6C2A"
+	order_index: 2
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["60A481CA763C776D"]
+			id: "417E9CF6AC9CE3B1"
+			tasks: [{
+				id: "19C33BC241658CAD"
+				item: "gtceu:tungsten_steel_ingot"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["4E7D2A8D8DEB5D97"]
+			id: "60A481CA763C776D"
+			tasks: [{
+				id: "1A51867151A3D767"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -2.0d
+		}
+	]
+	title: "Automation Age [IV-ZPM]"
+}

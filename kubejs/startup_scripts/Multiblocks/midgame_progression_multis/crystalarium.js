@@ -13,7 +13,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
         .rotationState(RotationState.NON_Y_AXIS)
         .appearanceBlock(() => Block.getBlock('gtceu:clean_machine_casing'))
         .recipeTypes(['crystalarium'])
-        .recipeModifiers([GTRecipeModifiers.OC_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('FBBBBBF','FCCCCCF','FCGGGCF','FCGGGCF','#CCCCC#')
             .aisle('BCCCCCB','C#####C','C#####C','C#####C','FCTTTCF')

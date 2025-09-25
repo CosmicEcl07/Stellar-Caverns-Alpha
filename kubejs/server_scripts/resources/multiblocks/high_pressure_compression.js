@@ -1,15 +1,15 @@
 ServerEvents.recipes(event => {
-    event.recipes.gtceu.high_pressure_compression('sand_to_glass_logs')
+    event.recipes.gtceu.high_pressure_compression('compressor_lava')
         .itemInputs('64x minecraft:cobblestone')
-        .outputFluids('minecraft:lava 750',)
+        .outputFluids('minecraft:lava 1000',)
         .duration(800)
-        .EUt(32)
+        .EUt(15)
 
     event.recipes.gtceu.high_pressure_compression('carbon_to_diamond')
         .itemInputs('64x gtceu:carbon_dust')
         .itemOutputs('1x minecraft:diamond')
         .duration(600)
-        .EUt(32)
+        .EUt(30)
     
     event.recipes.gtceu.high_pressure_compression('compress_exquisite_ruby')
         .itemInputs('9x gtceu:ruby_dust')

@@ -1,13 +1,13 @@
 GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
     event.create('greenhouse')
-        .category('drack')
+        .category('simple')
         .setEUIO('in')
         .setMaxIOSize(3, 3, 1, 0)
         .setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
         .setSound(GTSoundEntries.BATH)
         
     event.create('greenhouse_flowers')
-        .category('drack')
+        .category('simple')
         .setEUIO('in')
         .setMaxIOSize(2, 14, 1, 0)
         .setSlotOverlay(false, false, GuiTextures.SOLIDIFIER_OVERLAY)
@@ -22,7 +22,7 @@ GTCEuStartupEvents.registry('gtceu:machine', event => {
             GTRecipeTypes.get('greenhouse'),
             GTRecipeTypes.get('greenhouse_flowers')
         ])
-        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT])
+        .recipeModifiers([GTRecipeModifiers.OC_NON_PERFECT_SUBTICK])
         .appearanceBlock(() => Block.getBlock('kubejs:high_steam_machine_casing'))
         .pattern(definition => FactoryBlockPattern.start()
             .aisle('#AAAAA#','#TTFTT#','#TTFTT#','#TTFTT#','#######')

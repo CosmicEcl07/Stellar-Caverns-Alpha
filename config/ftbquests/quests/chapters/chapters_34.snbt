@@ -1,0 +1,63 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "chapters_34"
+	group: "3F5E1E1DE358ED88"
+	icon: "gtceu:crystalarium"
+	id: "297CF0FE9F5C41A3"
+	order_index: 1
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["3E5397CDDABD74D9"]
+			id: "6188AF03F4213971"
+			shape: "gear"
+			size: 1.25d
+			tasks: [{
+				id: "7D769F9015AF1ACD"
+				item: "gtceu:tungsten_dust"
+				type: "item"
+			}]
+			x: -0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["1AED42DCF7A59187"]
+			id: "7D6081C61EF78026"
+			tasks: [{
+				id: "6589D5DAF0455D1B"
+				item: "gtceu:tungstate_dust"
+				type: "item"
+			}]
+			x: -3.5d
+			y: 0.0d
+		}
+		{
+			dependencies: [
+				"7D6081C61EF78026"
+				"6E1ECD497883C22C"
+			]
+			id: "3E5397CDDABD74D9"
+			tasks: [{
+				id: "6EDF5B165A961B24"
+				item: "gtceu:tungstic_acid_dust"
+				type: "item"
+			}]
+			x: -2.0d
+			y: -0.5d
+		}
+		{
+			icon: "gtceu:hydrochloric_acid_bucket"
+			id: "6E1ECD497883C22C"
+			tasks: [{
+				id: "18FB164DD20DB961"
+				title: "Hydrochloric Acid"
+				type: "checkmark"
+			}]
+			title: "Hydrochloric Acid"
+			x: -3.5d
+			y: -1.0d
+		}
+	]
+	title: "Chapters 3-4"
+}

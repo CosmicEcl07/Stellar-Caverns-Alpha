@@ -4,7 +4,7 @@ ServerEvents.recipes(event => {
         .inputFluids('gtceu:copper 4608')
         .itemOutputs('functionalstorage:copper_upgrade')
         .duration(200)
-        .EUt(96)
+        .EUt(24)
 
     event.shaped('functionalstorage:fluid_1', [
         'AAA',
@@ -68,4 +68,13 @@ ServerEvents.recipes(event => {
         .circuit(1)
         .duration(100)
         .EUt(30)
+
+    event.shaped('gtceu:fluid_filter', [
+        'AAA',
+        'ABA',
+        'AAA'
+    ], {
+        A: 'gtceu:zinc_foil',
+        B: 'gtceu:sapphire_plate'
+    })
 });

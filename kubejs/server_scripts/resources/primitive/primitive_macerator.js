@@ -16,4 +16,10 @@ ServerEvents.recipes(event => {
         .itemOutputs('gtceu:quartz_sand_dust')
         .duration(40)
         .EUt(2)
+
+    event.recipes.gtceu.primitive_maceration('glass_pulp')
+        .itemInputs('#forge:glass')
+        .itemOutputs('gtceu:glass_dust')
+        .duration(40)
+        .EUt(2)
 });

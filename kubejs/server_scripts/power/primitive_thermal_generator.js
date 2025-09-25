@@ -10,21 +10,18 @@ ServerEvents.recipes(event => {
     event.recipes.gtceu.thermal_generator('primitive_light_calcareous_slurry_burning')
         .inputFluids(Fluid.of('gtceu:light_calcareous_slurry', 2000))
         .itemInputs('2x gtceu:dense_low_grade_terralite_dust')
-        .outputFluids(Fluid.of('minecraft:water', 750))
         .duration(4800)
         .EUt(-8);
 
     event.recipes.gtceu.thermal_generator('primitive_light_tuffaceous_slurry_burning')
         .inputFluids(Fluid.of('gtceu:light_tuffaceous_slurry', 2000))
         .itemInputs('2x gtceu:dense_low_grade_terralite_dust')
-        .outputFluids(Fluid.of('minecraft:water', 750))
         .duration(4800)
         .EUt(-8);
 
     event.recipes.gtceu.thermal_generator('primitive_light_granitic_slurry_burning')
         .inputFluids(Fluid.of('gtceu:light_granitic_slurry', 2000))
         .itemInputs('2x gtceu:dense_low_grade_terralite_dust')
-        .outputFluids(Fluid.of('minecraft:water', 750))
         .duration(4800)
         .EUt(-8);
 });

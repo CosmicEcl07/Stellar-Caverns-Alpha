@@ -92,9 +92,24 @@ ServerEvents.recipes(event => {
         .EUt(28)
 
     event.recipes.gtceu.autoclave('quartzite_from_silica')
-       .itemInputs('gtceu:silicon_dioxide_dust')
+        .itemInputs('gtceu:silicon_dioxide_dust')
         .inputFluids('gtceu:distilled_water 100')
         .chancedOutput('gtceu:quartzite_gem', 5000, 0)
         .duration(600)
         .EUt(24)
+
+    event.recipes.gtceu.electric_blast_furnace('smelt_netherite_ebf')
+        .itemInputs('gtceu:gold_dust', 'gtceu:debris_dust')
+        .itemOutputs('minecraft:netherite_ingot')
+        .blastFurnaceTemp(4200)
+        .duration(2400)
+        .EUt(7680)
+
+    event.recipes.gtceu.electric_blast_furnace('smelt_netherite_faster_ebf')
+        .itemInputs('gtceu:gold_dust', 'gtceu:debris_dust')
+        .inputFluids('gtceu:argon 50')
+        .itemOutputs('minecraft:netherite_ingot')
+        .blastFurnaceTemp(4200)
+        .duration(1608)
+        .EUt(7680)
 });

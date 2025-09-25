@@ -3,7 +3,7 @@ GTCEuStartupEvents.registry('gtceu:recipe_type', event => {
 	event.create('geothermal_generator')
 		.category('basic')
 		.setEUIO('in')
-		.setMaxIOSize(1, 1, 2, 1)
+		.setMaxIOSize(1, 0, 2, 0)
 		.setSlotOverlay(false, false, GuiTextures.MOLECULAR_OVERLAY_1)
 		.setProgressBar(GuiTextures.PROGRESS_BAR_ARROW, FillDirection.LEFT_TO_RIGHT)
 		.setSound(GTSoundEntries.TURBINE);

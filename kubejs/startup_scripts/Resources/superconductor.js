@@ -1,5 +1,5 @@
 GTCEuStartupEvents.registry('gtceu:material', event => {
-    event.create('dense_low_grade_terralite_superconductor')
+    event.create('low_grade_terralite_superconductor')
         .ingot() 
         .cableProperties(32, 2, 0, true, 90)
         .color(0x696969)
@@ -12,7 +12,7 @@ GTCEuStartupEvents.registry('gtceu:material', event => {
 
     event.create('hazium_supertemporaryconductor')
         .cableProperties(512, 8, 0, true)
-        .color(0xcf9025)
+        .color(0xe3e364)
         .ingot()
         .blastTemp(1800,'low', 400, 400)
 });

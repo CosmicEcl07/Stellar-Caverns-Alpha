@@ -441,14 +441,6 @@ ServerEvents.recipes(event => {
         E: '#gtceu:circuits/iv'
     });
 
-    event.recipes.gtceu.assembler('assemble_portal_frame')
-        .itemInputs('8x gtceu:ender_eye_plate', 'minecraft:stone_bricks')
-        .inputFluids('minecraft:lava 16000')
-        .itemOutputs('minecraft:end_portal_frame')
-        .cleanroom(CleanroomType.CLEANROOM)
-        .duration(600)
-        .EUt(1920)
-
     event.shaped('ae2:condenser', [
         'ABA',
         'BCB',

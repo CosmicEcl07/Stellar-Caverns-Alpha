@@ -498,9 +498,15 @@
 				"5BF9E50B012DFD2F"
 				"3BE90BC2520E1AA6"
 			]
+			description: ["You can achieve this with 2 LV energy hatches."]
 			icon: "gtceu:mv_energy_input_hatch"
 			id: "42A6B9DFBCAB3896"
 			shape: "octagon"
+			tasks: [{
+				id: "7902763D8FA2C6CC"
+				title: "MV Milling"
+				type: "checkmark"
+			}]
 			title: "MV Milling"
 			x: 11.0d
 			y: -2.5d
@@ -759,10 +765,11 @@
 				}
 			]
 			x: 17.0d
-			y: -1.0d
+			y: -4.0d
 		}
 		{
 			dependencies: ["5608C61EDC1F024D"]
+			description: ["This also gives apatite as a byproduct, which is useful for phosphorus among other things."]
 			id: "051609B06DDA149D"
 			tasks: [
 				{
@@ -777,7 +784,7 @@
 				}
 			]
 			x: 17.0d
-			y: -4.0d
+			y: -1.0d
 		}
 		{
 			dependencies: ["5608C61EDC1F024D"]
@@ -845,12 +852,15 @@
 		}
 		{
 			dependencies: ["3BE90BC2520E1AA6"]
+			icon: "gtceu:hv_energy_input_hatch"
 			id: "0394EDA6801B90BA"
+			shape: "octagon"
 			tasks: [{
-				id: "13818BB89168A13B"
-				item: "gtceu:hv_energy_input_hatch"
-				type: "item"
+				id: "3F978C384857F71D"
+				title: "HV Milling"
+				type: "checkmark"
 			}]
+			title: "HV Milling"
 			x: 11.0d
 			y: 1.5d
 		}
@@ -1030,6 +1040,7 @@
 		}
 		{
 			dependencies: ["60788071582E384E"]
+			description: ["Cool the ingot in a vacuum freezer for your final product."]
 			icon: "gtceu:hot_titanium_ingot"
 			id: "039958B34F982816"
 			tasks: [{
@@ -1201,6 +1212,633 @@
 			x: -2.0d
 			y: -5.5d
 		}
+		{
+			dependencies: [
+				"2AC8C898A91C184E"
+				"3A67149804795B09"
+			]
+			hide_dependent_lines: true
+			icon: "gtceu:crystalization_catalyst_solution_bucket"
+			id: "1687CC6090E2DE89"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "37C3494BF7431594"
+				item: "gtceu:crystalization_catalyst_solution_bucket"
+				type: "item"
+			}]
+			title: "Crystalization Catalyst Solution"
+			x: 27.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["22EB75E1F4028A2E"]
+			description: ["Electrolyze the carbon monoxide from distilling impure TiCl4 to get your carbon back plus some byproduct oxygen."]
+			icon: "gtceu:carbon_monoxide_bucket"
+			id: "2829DDEE325D17ED"
+			tasks: [{
+				id: "67D340AF2C0555E7"
+				title: "Recycle Your Carbon Monoxide"
+				type: "checkmark"
+			}]
+			x: 18.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4C1A8AFAACD5DC37"]
+			icon: "gtceu:drilling_fluid_bucket"
+			id: "2AC8C898A91C184E"
+			tasks: [{
+				id: "09B0B3BB1F4AEC3D"
+				title: "Drilling Fluid"
+				type: "checkmark"
+			}]
+			x: 25.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["38EED02F1AF71E2E"]
+			id: "3A67149804795B09"
+			tasks: [{
+				id: "3782361DFAB1CFC7"
+				item: "gtceu:monoammonium_phosphate_dust"
+				type: "item"
+			}]
+			x: 25.5d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"2A84ADB8215DDFE2"
+				"3EAFED6A20EAAEE8"
+			]
+			id: "38EED02F1AF71E2E"
+			tasks: [{
+				id: "091B5E90D8867B80"
+				item: "gtceu:monoammonium_phosphate_gem"
+				type: "item"
+			}]
+			x: 24.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"71A7EFA96347DF40"
+				"754DEA7B2F7ECBA3"
+			]
+			icon: "gtceu:ammonia_bucket"
+			id: "2A84ADB8215DDFE2"
+			tasks: [{
+				id: "3DF14618EEAA65F2"
+				title: "Ammonia"
+				type: "checkmark"
+			}]
+			x: 24.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5FEBC4D939E14CB5"]
+			description: ["React the phosphorus with water and oxygen in a large chemical reactor for phosphoric acid."]
+			icon: "gtceu:phosphoric_acid_bucket"
+			id: "3EAFED6A20EAAEE8"
+			tasks: [{
+				id: "2971E14CB0CDBACD"
+				title: "Phosphoric Acid"
+				type: "checkmark"
+			}]
+			x: 22.5d
+			y: 2.0d
+		}
+		{
+			description: ["Mix this with water and stone dust in a mixer for drilling fluid. There's several sources for lubricant, just pick whichever one fits your situation best."]
+			icon: "gtceu:lubricant_bucket"
+			id: "4C1A8AFAACD5DC37"
+			tasks: [{
+				id: "7B508E25BE666E7E"
+				title: "Lubricant"
+				type: "checkmark"
+			}]
+			x: 24.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["051609B06DDA149D"]
+			description: ["The Phosphorus can come from breaking down apatite dust, which comes from impure pyrochlore dust."]
+			hide_dependency_lines: true
+			id: "5FEBC4D939E14CB5"
+			tasks: [{
+				id: "2C8070580A52FD51"
+				item: "gtceu:phosphorus_dust"
+				type: "item"
+			}]
+			x: 21.0d
+			y: 2.0d
+		}
+		{
+			icon: "gtceu:nitrogen_bucket"
+			id: "71A7EFA96347DF40"
+			tasks: [{
+				id: "4993FE32E77A07EA"
+				title: "Nitrogen"
+				type: "checkmark"
+			}]
+			x: 22.5d
+			y: 1.0d
+		}
+		{
+			icon: "gtceu:oxygen_bucket"
+			id: "754DEA7B2F7ECBA3"
+			tasks: [{
+				id: "202CC8738ED98E9D"
+				title: "Oxygen"
+				type: "checkmark"
+			}]
+			title: "Oxygen"
+			x: 25.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"71F0A93FB74E2810"
+				"660B3F9B9754A3BC"
+			]
+			id: "327B42D5B7C63ACE"
+			shape: "gear"
+			size: 1.5d
+			tasks: [{
+				id: "74ABC7FDF702EADB"
+				item: "gtceu:polytetrafluoroethylene_bucket"
+				type: "item"
+			}]
+			title: "Polytetrafluoroethylene"
+			x: 25.0d
+			y: -2.5d
+		}
+		{
+			icon: "gtceu:oxygen_bucket"
+			id: "71F0A93FB74E2810"
+			tasks: [{
+				id: "1A626D95902DF704"
+				title: "Oxygen"
+				type: "checkmark"
+			}]
+			x: 24.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"7303FAADA40675AE"
+				"4FC079F30E33089E"
+			]
+			icon: "gtceu:tetrafluoroethylene_bucket"
+			id: "660B3F9B9754A3BC"
+			tasks: [{
+				id: "0AF3F149C00297E5"
+				title: "Tetrafluoroethylene"
+				type: "checkmark"
+			}]
+			x: 23.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"6BE8E57EAC582649"
+				"1FE8BC571C88BD39"
+			]
+			icon: "gtceu:hydrofluoric_acid_bucket"
+			id: "4FC079F30E33089E"
+			tasks: [{
+				id: "0329108A210977CA"
+				title: "Hydrofluoric Acid"
+				type: "checkmark"
+			}]
+			x: 22.5d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"54350D39BD22EE5C"
+				"42C3F1A4B04661C3"
+			]
+			icon: "gtceu:chloroform_bucket"
+			id: "7303FAADA40675AE"
+			tasks: [{
+				id: "198C7E960426A269"
+				title: "Chloroform"
+				type: "checkmark"
+			}]
+			x: 22.5d
+			y: -3.0d
+		}
+		{
+			icon: "gtceu:fluorine_bucket"
+			id: "6BE8E57EAC582649"
+			tasks: [{
+				id: "11FFEA387670948D"
+				title: "Fluorine"
+				type: "checkmark"
+			}]
+			x: 21.0d
+			y: -1.0d
+		}
+		{
+			icon: "gtceu:hydrogen_bucket"
+			id: "1FE8BC571C88BD39"
+			tasks: [{
+				id: "38BDDF057E5FFE5B"
+				title: "Hydrogen"
+				type: "checkmark"
+			}]
+			x: 21.0d
+			y: -2.0d
+		}
+		{
+			icon: "gtceu:chlorine_bucket"
+			id: "54350D39BD22EE5C"
+			tasks: [{
+				id: "359D8EE16C0B5B7C"
+				title: "Chloroform"
+				type: "checkmark"
+			}]
+			x: 21.0d
+			y: -3.0d
+		}
+		{
+			id: "42C3F1A4B04661C3"
+			tasks: [{
+				id: "01A55285A5F0D946"
+				item: "gtceu:methane_bucket"
+				type: "item"
+			}]
+			x: 21.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["327B42D5B7C63ACE"]
+			id: "11570F3EEF99C8D4"
+			shape: "octagon"
+			tasks: [{
+				id: "733A3D89A6B7A2FE"
+				item: "gtceu:polytetrafluoroethylene_ingot"
+				type: "item"
+			}]
+			x: 26.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"4E7D2A8D8DEB5D97"
+				"1687CC6090E2DE89"
+			]
+			icon: "gtceu:crystalarium"
+			id: "021F2795EF1FB2BE"
+			shape: "gear"
+			size: 2.0d
+			tasks: [{
+				id: "79AF463D16925A43"
+				type: "checkmark"
+			}]
+			title: "Crystalarium Ore Generation"
+			x: 31.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "05A4DE0A736BF0CC"
+			tasks: [{
+				id: "45DED612B81C6FC3"
+				item: "gtceu:raw_chalcopyrite"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "6A88CC3C70FF6CEC"
+			tasks: [{
+				id: "0DACD0600FEC6307"
+				item: "gtceu:raw_ilmenite"
+				type: "item"
+			}]
+			x: 31.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "23544053E9CA475B"
+			tasks: [{
+				id: "75D118420B9F0A7F"
+				item: "gtceu:raw_bauxite"
+				type: "item"
+			}]
+			x: 33.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "070F1D6023B570A5"
+			tasks: [{
+				id: "4AAA44BF28E08A6D"
+				item: "gtceu:raw_cooperite"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "49D894113D089BE6"
+			tasks: [{
+				id: "79E2B799FAB6F72D"
+				item: "gtceu:raw_apatite"
+				type: "item"
+			}]
+			x: 29.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "1B4BD86F39729CF1"
+			tasks: [{
+				id: "1A74743EC6E534F1"
+				item: "gtceu:raw_pyrochlore"
+				type: "item"
+			}]
+			x: 33.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "755DC4B92EF94DC8"
+			tasks: [{
+				id: "1CA481193E6EFB91"
+				item: "gtceu:raw_uraninite"
+				type: "item"
+			}]
+			x: 29.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "79B906B3F4DFC583"
+			tasks: [{
+				id: "0893532F3CAD7E29"
+				item: "gtceu:raw_pyrolusite"
+				type: "item"
+			}]
+			x: 32.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "74243663835EB050"
+			tasks: [{
+				id: "58098EB98E270CBD"
+				item: "gtceu:raw_tantalite"
+				type: "item"
+			}]
+			x: 32.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "49A41CD469EF1C3C"
+			tasks: [{
+				id: "5C8B9BAD023B3857"
+				item: "gtceu:raw_redstone"
+				type: "item"
+			}]
+			x: 30.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "6B41D595F3388E18"
+			tasks: [{
+				id: "0C12950BA3699371"
+				item: "gtceu:raw_ruby"
+				type: "item"
+			}]
+			x: 29.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "666A75AED71EB557"
+			tasks: [{
+				id: "22B38E3275A9ADE1"
+				item: "gtceu:raw_tungstate"
+				type: "item"
+			}]
+			x: 34.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "51ACCEE87AC82F0D"
+			tasks: [{
+				id: "1914DBC5B71C08D1"
+				item: "gtceu:raw_wulfenite"
+				type: "item"
+			}]
+			x: 31.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "31B546F65BBBC47E"
+			tasks: [{
+				id: "0D2818732B9F55CF"
+				item: "gtceu:raw_vanadium_magnetite"
+				type: "item"
+			}]
+			x: 34.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "4EFCD7B4A178B0B2"
+			tasks: [{
+				id: "474CAF8481955F6C"
+				item: "gtceu:raw_pentlandite"
+				type: "item"
+			}]
+			x: 33.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "5BDF8348CA8E6BD4"
+			tasks: [{
+				id: "0D6D8A5FD9487E85"
+				item: "gtceu:raw_stibnite"
+				type: "item"
+			}]
+			x: 30.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "03636685FE1557BD"
+			tasks: [{
+				id: "6330FF5F457FDE02"
+				item: "gtceu:raw_sphalerite"
+				type: "item"
+			}]
+			x: 34.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "168BF26F4DD2DE36"
+			tasks: [{
+				id: "72543F6541AE3AD3"
+				item: "gtceu:raw_emerald"
+				type: "item"
+			}]
+			x: 28.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "7B6BEEC6FD1EEDF5"
+			tasks: [{
+				id: "53825BEBFBAC2885"
+				item: "gtceu:raw_diamond"
+				type: "item"
+			}]
+			x: 29.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "16FFD022A5F160DD"
+			tasks: [{
+				id: "0F17E66EBB338D61"
+				item: "gtceu:raw_galena"
+				type: "item"
+			}]
+			x: 31.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "37BEE6B902F82F46"
+			tasks: [{
+				id: "71E423C8B044329C"
+				item: "gtceu:raw_monazite"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "75A3DBDCE9E85576"
+			tasks: [{
+				id: "485201944D6BA278"
+				item: "gtceu:raw_cassiterite"
+				type: "item"
+			}]
+			x: 29.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "49308CBBD7734F7D"
+			tasks: [{
+				id: "07BEC018B77A0221"
+				item: "gtceu:raw_quartzite"
+				type: "item"
+			}]
+			x: 31.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["021F2795EF1FB2BE"]
+			id: "76397B69C8F535B0"
+			tasks: [{
+				id: "020E315AB219C57B"
+				item: "gtceu:raw_magnetite"
+				type: "item"
+			}]
+			x: 30.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["3BE90BC2520E1AA6"]
+			hide_dependency_lines: true
+			icon: "gtceu:ev_energy_input_hatch"
+			id: "0A03991341363CB2"
+			shape: "octagon"
+			size: 1.0d
+			tasks: [{
+				id: "16ACEF7543301F7A"
+				title: "EV Milling"
+				type: "checkmark"
+			}]
+			x: 22.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["0A03991341363CB2"]
+			icon: "gtceu:netherrack_mixture_bucket"
+			id: "2CF2E075B878680F"
+			tasks: [{
+				id: "49BBE91C720B0092"
+				title: "Netherrack Mixture"
+				type: "checkmark"
+			}]
+			x: 23.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["0A03991341363CB2"]
+			icon: "gtceu:blackstone_mixture_bucket"
+			id: "6798717DACC124B9"
+			tasks: [{
+				id: "1FC999B7082A0BCC"
+				title: "Blackstone Mixture"
+				type: "checkmark"
+			}]
+			x: 23.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["2CF2E075B878680F"]
+			id: "1B517386C0747538"
+			tasks: [{
+				id: "44973EBFC9C2C743"
+				item: "minecraft:glowstone_dust"
+				type: "item"
+			}]
+			x: 25.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["6798717DACC124B9"]
+			id: "7A3C50D8FECAE43C"
+			tasks: [{
+				id: "28F6CA4FDE8467A6"
+				item: "gtceu:tiny_debris_dust"
+				type: "item"
+			}]
+			x: 25.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["7A3C50D8FECAE43C"]
+			id: "6B6377451135FE57"
+			shape: "octagon"
+			tasks: [{
+				id: "2498702E9B8BD5F3"
+				item: "minecraft:netherite_ingot"
+				type: "item"
+			}]
+			x: 26.5d
+			y: -6.5d
+		}
 	]
-	title: "Chapter 1-2"
+	title: "Chapters 1-2"
 }
